@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div class="root">
+        <h1 id="counter-value"></h1>
+        <button id="increment-btn">+1</button>
+    </div>
+
+    <script>
+        const counterValueElement = document.getElementById("counter-value");
+        const incrementBtn = document.getElementById("increment-btn");
+        let counterValue = 0;
+
+        function increment() {
+            counterValue += 1;
+            counterValueElement.innerText = counterValue;
+        }
+    </script>
+</body>
+
+</html>
